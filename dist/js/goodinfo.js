@@ -1,0 +1,1 @@
+"use strict";var name=$("#addToCar-name").text(),price=$("#addToCar-price").text();$("#addToCar").click(function(){$.ajax({url:"../interface/addwq.php",dataType:"json",data:{id:"435435",name:name,img:"../images/shoppingcar.jpg",num:1,price:price},success:function(a){a.code?alert("商品加入成功"):alert("商品加入失败")}})});
